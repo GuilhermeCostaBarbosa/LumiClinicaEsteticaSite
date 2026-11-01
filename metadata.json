@@ -1,0 +1,6 @@
+{
+  "name": "LUMI — Premium Aesthetics Clinic",
+  "description": "An editorial, responsive institutional website for LUMI, a premium women's facial and body aesthetics clinic.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}

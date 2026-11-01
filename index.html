@@ -1,0 +1,1124 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>LUMI — Premium Facial & Body Aesthetics Clinic</title>
+  <meta name="description" content="LUMI is a premium aesthetics clinic dedicated to gentle facial and body treatments, holistic skincare, and natural radiant glow.">
+  <meta property="og:title" content="LUMI — Premium Facial & Body Aesthetics Clinic">
+  <meta property="og:description" content="A gentle approach to feeling your best. Discover bespoke aesthetics, facial treatments, and mindful aftercare rituals.">
+  <meta property="og:type" content="website">
+  <meta name="twitter:card" content="summary_large_image">
+
+  <!-- Google Fonts: Cormorant Garamond & Plus Jakarta Sans -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;0,600;1,400;1,500;1,600&family=Plus+Jakarta+Sans:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+
+  <!-- Stylesheet -->
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+  <!-- ==========================================================================
+       HEADER & NAVIGATION
+       ========================================================================== -->
+  <header class="site-header" id="top">
+    <div class="container header-container">
+      <a href="#top" class="brand-logo" aria-label="LUMI Aesthetics Studio Home">LUMI</a>
+
+      <nav class="nav-desktop-wrap" aria-label="Primary Navigation">
+        <ul class="nav-desktop">
+          <li><a href="#about" class="nav-link">About us</a></li>
+          <li><a href="#services" class="nav-link">Services</a></li>
+          <li><a href="#works" class="nav-link">Works</a></li>
+          <li><a href="#reviews" class="nav-link">Reviews</a></li>
+          <li><a href="#care" class="nav-link">Care</a></li>
+          <li><a href="#contact" class="nav-link">Contact</a></li>
+        </ul>
+      </nav>
+
+      <div class="header-cta-group">
+        <span class="header-tagline">A calm and elegant space to showcase your beauty &amp; glow</span>
+        <button class="btn btn-outline header-book-btn" data-open-booking aria-label="Schedule a visit at LUMI">
+          <span>Schedule a visit</span>
+          <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+            <line x1="5" y1="12" x2="19" y2="12"></line>
+            <polyline points="12 5 19 12 12 19"></polyline>
+          </svg>
+        </button>
+        
+        <!-- Enhanced Animated Mobile Menu Toggle Button -->
+        <button class="mobile-nav-toggle" id="mobileNavToggle" aria-label="Abrir menu de navegação" aria-expanded="false" aria-controls="mobileDrawer">
+          <span class="hamburger-box" aria-hidden="true">
+            <span class="hamburger-line line-1"></span>
+            <span class="hamburger-line line-2"></span>
+            <span class="hamburger-line line-3"></span>
+          </span>
+          <span class="hamburger-label">Menu</span>
+        </button>
+      </div>
+    </div>
+  </header>
+
+  <!-- Enhanced Mobile Drawer with Smooth Animations -->
+  <div class="mobile-drawer" id="mobileDrawer" aria-hidden="true">
+    <div class="mobile-drawer-backdrop" aria-hidden="true"></div>
+    <div class="mobile-drawer-content" role="dialog" aria-modal="true" aria-label="Menu de Navegação Principal">
+      <div class="mobile-drawer-header">
+        <a href="#top" class="brand-logo mobile-drawer-logo">LUMI</a>
+        <button class="mobile-drawer-close" id="mobileDrawerClose" aria-label="Fechar menu de navegação">
+          <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+            <line x1="18" y1="6" x2="6" y2="18"></line>
+            <line x1="6" y1="6" x2="18" y2="18"></line>
+          </svg>
+        </button>
+      </div>
+
+      <nav class="mobile-drawer-nav" aria-label="Navegação Mobile">
+        <ul class="mobile-nav-links">
+          <li class="mobile-nav-link-item">
+            <a href="#about" class="mobile-nav-link">
+              <span class="mobile-link-num">01</span>
+              <span class="mobile-link-title">About <em>us</em></span>
+              <svg class="mobile-link-arrow" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="5" y1="12" x2="19" y2="12"></line><polyline points="12 5 19 12 12 19"></polyline></svg>
+            </a>
+          </li>
+          <li class="mobile-nav-link-item">
+            <a href="#services" class="mobile-nav-link">
+              <span class="mobile-link-num">02</span>
+              <span class="mobile-link-title">Our <em>services</em></span>
+              <svg class="mobile-link-arrow" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="5" y1="12" x2="19" y2="12"></line><polyline points="12 5 19 12 12 19"></polyline></svg>
+            </a>
+          </li>
+          <li class="mobile-nav-link-item">
+            <a href="#works" class="mobile-nav-link">
+              <span class="mobile-link-num">03</span>
+              <span class="mobile-link-title">Our <em>works</em></span>
+              <svg class="mobile-link-arrow" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="5" y1="12" x2="19" y2="12"></line><polyline points="12 5 19 12 12 19"></polyline></svg>
+            </a>
+          </li>
+          <li class="mobile-nav-link-item">
+            <a href="#reviews" class="mobile-nav-link">
+              <span class="mobile-link-num">04</span>
+              <span class="mobile-link-title">Client <em>reviews</em></span>
+              <svg class="mobile-link-arrow" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="5" y1="12" x2="19" y2="12"></line><polyline points="12 5 19 12 12 19"></polyline></svg>
+            </a>
+          </li>
+          <li class="mobile-nav-link-item">
+            <a href="#care" class="mobile-nav-link">
+              <span class="mobile-link-num">05</span>
+              <span class="mobile-link-title">Aftercare <em>rituals</em></span>
+              <svg class="mobile-link-arrow" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="5" y1="12" x2="19" y2="12"></line><polyline points="12 5 19 12 12 19"></polyline></svg>
+            </a>
+          </li>
+          <li class="mobile-nav-link-item">
+            <a href="#contact" class="mobile-nav-link">
+              <span class="mobile-link-num">06</span>
+              <span class="mobile-link-title">Ready to <em>Glow</em></span>
+              <svg class="mobile-link-arrow" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="5" y1="12" x2="19" y2="12"></line><polyline points="12 5 19 12 12 19"></polyline></svg>
+            </a>
+          </li>
+        </ul>
+      </nav>
+
+      <div class="mobile-drawer-footer">
+        <div class="mobile-drawer-actions">
+          <button class="btn btn-primary mobile-drawer-btn" data-open-booking>
+            <span>Schedule a visit</span>
+            <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><line x1="5" y1="12" x2="19" y2="12"></line><polyline points="12 5 19 12 12 19"></polyline></svg>
+          </button>
+          <button class="btn btn-outline mobile-drawer-btn" data-whatsapp>
+            <svg width="15" height="15" viewBox="0 0 24 24" fill="currentColor">
+              <path d="M12.031 6.172c-3.181 0-5.767 2.586-5.768 5.766-.001 1.298.38 2.27 1.019 3.287l-.711 2.598 2.669-.699c.969.539 1.942.823 2.79.823h.002c3.18 0 5.767-2.587 5.768-5.766 0-3.182-2.587-5.769-5.769-5.769zm3.376 8.163c-.147.414-.738.777-1.026.828-.278.049-.636.075-1.036-.053-.243-.078-.557-.184-1.031-.389-1.996-.864-3.298-2.887-3.398-3.02-.1-.133-.809-1.077-.809-2.054 0-.977.512-1.458.694-1.658.182-.2.398-.25.53-.25.133 0 .265.002.381.008.123.007.288-.046.45.344.167.399.569 1.388.618 1.488.05.1.083.216.017.348-.066.133-.1.216-.199.332-.1.116-.21.259-.3.348-.1.099-.204.208-.088.407.116.199.516.852 1.108 1.379.761.679 1.403.889 1.602.988.199.1.316.083.432-.05.116-.133.498-.58.63-.779.133-.199.266-.166.448-.099.183.066 1.162.548 1.361.647.199.1.332.149.381.233.05.083.05.481-.097.895z"/>
+            </svg>
+            <span>WhatsApp Consultation</span>
+          </button>
+        </div>
+
+        <div class="mobile-drawer-info">
+          <p class="mobile-info-address">Rue de Laborde, 21 — 75008 Paris</p>
+          <p class="mobile-info-contact">+33 1 40 20 53 46 • bonjour@lumi-studio.com</p>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <main>
+    <!-- ==========================================================================
+         SECTION 01 — HERO
+         ========================================================================== -->
+    <section class="hero-section">
+      <div class="container">
+        <div class="hero-card">
+          <img 
+            src="assets/images/hero-glow.jpg" 
+            alt="Woman with radiant healthy skin gently tilting head in soft sunlight" 
+            class="hero-image"
+            loading="eager"
+            referrerpolicy="no-referrer"
+          >
+          <div class="hero-overlay">
+            <div class="hero-content fade-up">
+              <h1 class="hero-title">Beauty in <em>simplicity.</em></h1>
+              <p class="hero-subtext">A gentle approach to feeling your best. Subtle glow, honest care, timeless results.</p>
+              <div class="hero-actions">
+                <button class="btn btn-white" data-open-booking>
+                  <span>Schedule a visit</span>
+                  <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                    <line x1="5" y1="12" x2="19" y2="12"></line>
+                    <polyline points="12 5 19 12 12 19"></polyline>
+                  </svg>
+                </button>
+                <a href="#services" class="btn btn-outline-white">
+                  <span>Explore Services</span>
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Marquee Strip -->
+      <div class="marquee-strip" aria-hidden="true">
+        <div class="marquee-track">
+          <div class="marquee-item">
+            <span>VEGAN</span><span class="dot">•</span>
+            <span>ECOFRIENDLY</span><span class="dot">•</span>
+            <span>ORGANIC PRODUCTS</span><span class="dot">•</span>
+            <span>TIMELESS RESULTS</span><span class="dot">•</span>
+            <span>HOLISTIC CARE</span><span class="dot">•</span>
+          </div>
+          <div class="marquee-item">
+            <span>VEGAN</span><span class="dot">•</span>
+            <span>ECOFRIENDLY</span><span class="dot">•</span>
+            <span>ORGANIC PRODUCTS</span><span class="dot">•</span>
+            <span>TIMELESS RESULTS</span><span class="dot">•</span>
+            <span>HOLISTIC CARE</span><span class="dot">•</span>
+          </div>
+          <div class="marquee-item">
+            <span>VEGAN</span><span class="dot">•</span>
+            <span>ECOFRIENDLY</span><span class="dot">•</span>
+            <span>ORGANIC PRODUCTS</span><span class="dot">•</span>
+            <span>TIMELESS RESULTS</span><span class="dot">•</span>
+            <span>HOLISTIC CARE</span><span class="dot">•</span>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ==========================================================================
+         SECTION 02 — BRAND MANIFESTO
+         ========================================================================== -->
+    <section class="manifesto-section" aria-label="Brand Philosophy">
+      <div class="container-narrow fade-up">
+        <blockquote class="manifesto-quote">
+          “Our <em>goal</em> is to provide a holistic experience that <em>leaves you</em> looking and feeling 
+          <svg class="manifesto-botanical-icon" viewBox="0 0 32 32" fill="currentColor" aria-hidden="true">
+            <path d="M16 2C16 2 12 8 12 14C12 18 14 21 16 22C18 21 20 18 20 14C20 8 16 2 16 2Z" opacity="0.8"/>
+            <path d="M16 22V30M16 22C11 20 6 15 6 9C9 9 14 11 16 15M16 22C21 20 26 15 26 9C23 9 18 11 16 15" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"/>
+          </svg>
+          your <em>best.</em>”
+        </blockquote>
+      </div>
+    </section>
+
+    <!-- ==========================================================================
+         SECTION 03 — ABOUT US
+         ========================================================================== -->
+    <section class="about-section section-padding" id="about">
+      <div class="container">
+        <div class="about-grid">
+          <!-- Left Column: Primary Treatment Room Image -->
+          <div class="about-image-primary-wrap fade-up">
+            <img 
+              src="assets/images/treatment-room.jpg" 
+              alt="Serene aesthetic treatment suite with natural linen bed and oak wood details"
+              class="about-image-primary"
+              loading="lazy"
+              referrerpolicy="no-referrer"
+            >
+          </div>
+
+          <!-- Right Column: Editorial Narrative -->
+          <div class="about-content fade-up">
+            <span class="about-badge">Sanctuary of Wellbeing</span>
+            <h2 class="about-title">About <em>us</em></h2>
+            <p class="about-text">
+              Hi, I’m Emma, founder of LUMI Studio. My approach is simple — beauty should feel effortless. With years of experience in cosmetology, I help clients feel confident in their own skin.
+            </p>
+            <p class="about-text">
+              Every appointment at LUMI is an unhurried, mindful ritual. We believe true aesthetic elegance comes from nurturing your skin’s biological vitality rather than masking it.
+            </p>
+
+            <!-- Supporting Small Card -->
+            <div class="about-supporting-card">
+              <img 
+                src="assets/images/service-massage.jpg" 
+                alt="Aesthetician performing gentle facial therapy" 
+                class="about-supporting-img"
+                loading="lazy"
+                referrerpolicy="no-referrer"
+              >
+              <div class="about-editorial-phrase">
+                Here, everything is created with <em>calm, care, and intention.</em>
+              </div>
+            </div>
+
+            <div style="margin-top: 1rem;">
+              <button class="btn btn-primary" data-open-booking>
+                <span>Book your consultation</span>
+                <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                  <line x1="5" y1="12" x2="19" y2="12"></line>
+                  <polyline points="12 5 19 12 12 19"></polyline>
+                </svg>
+              </button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ==========================================================================
+         SECTION 04 — OUR SERVICES
+         ========================================================================== -->
+    <section class="services-section section-padding" id="services">
+      <div class="container">
+        <div class="services-header-row fade-up">
+          <div>
+            <span class="about-badge">Tailored Protocols</span>
+            <h2 class="section-title">Our <em>services</em></h2>
+          </div>
+          <p class="section-subtitle">
+            Each treatment is crafted to enhance your natural beauty through biocompatible techniques and gentle care.
+          </p>
+        </div>
+
+        <div class="services-grid">
+          <!-- Card 1 -->
+          <div class="service-card card-hoverable fade-up" data-service="Hardware Cosmetology">
+            <img 
+              src="assets/images/service-roller.jpg" 
+              alt="Hardware cosmetology microcurrent skin sculpting" 
+              class="service-card-img"
+              loading="lazy"
+              referrerpolicy="no-referrer"
+            >
+            <div class="service-card-scrim">
+              <div class="service-card-footer">
+                <div>
+                  <h3 class="service-card-title">Hardware cosmetology</h3>
+                  <p class="service-card-subtitle">Microcurrent &amp; Lymphatic Sculpting</p>
+                </div>
+                <div class="btn-circle-arrow" aria-label="Book Hardware Cosmetology">
+                  <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                    <line x1="7" y1="17" x2="17" y2="7"></line>
+                    <polyline points="7 7 17 7 17 17"></polyline>
+                  </svg>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Card 2 -->
+          <div class="service-card card-hoverable fade-up" data-service="Skincare Procedures">
+            <img 
+              src="assets/images/service-cleanser.jpg" 
+              alt="Skincare procedures facial cleansing and nourishment" 
+              class="service-card-img"
+              loading="lazy"
+              referrerpolicy="no-referrer"
+            >
+            <div class="service-card-scrim">
+              <div class="service-card-footer">
+                <div>
+                  <h3 class="service-card-title">Skincare procedures</h3>
+                  <p class="service-card-subtitle">Botanical Peels &amp; Deep Infusion</p>
+                </div>
+                <div class="btn-circle-arrow" aria-label="Book Skincare Procedures">
+                  <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                    <line x1="7" y1="17" x2="17" y2="7"></line>
+                    <polyline points="7 7 17 7 17 17"></polyline>
+                  </svg>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Card 3 -->
+          <div class="service-card card-hoverable fade-up" data-service="Lip & Contour Care">
+            <img 
+              src="assets/images/service-lips.jpg" 
+              alt="Lip care hydration and contour replenishment" 
+              class="service-card-img"
+              loading="lazy"
+              referrerpolicy="no-referrer"
+            >
+            <div class="service-card-scrim">
+              <div class="service-card-footer">
+                <div>
+                  <h3 class="service-card-title">Lip &amp; contour care</h3>
+                  <p class="service-card-subtitle">Hyaluronic Bio-Infusion &amp; Barrier Care</p>
+                </div>
+                <div class="btn-circle-arrow" aria-label="Book Lip Care">
+                  <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                    <line x1="7" y1="17" x2="17" y2="7"></line>
+                    <polyline points="7 7 17 7 17 17"></polyline>
+                  </svg>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Card 4 -->
+          <div class="service-card card-hoverable fade-up" data-service="Massage Therapy">
+            <img 
+              src="assets/images/service-massage.jpg" 
+              alt="Soothing facial massage and tension release" 
+              class="service-card-img"
+              loading="lazy"
+              referrerpolicy="no-referrer"
+            >
+            <div class="service-card-scrim">
+              <div class="service-card-footer">
+                <div>
+                  <h3 class="service-card-title">Massage therapy</h3>
+                  <p class="service-card-subtitle">Sculptural Buccal &amp; Myofascial Lift</p>
+                </div>
+                <div class="btn-circle-arrow" aria-label="Book Massage Therapy">
+                  <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                    <line x1="7" y1="17" x2="17" y2="7"></line>
+                    <polyline points="7 7 17 7 17 17"></polyline>
+                  </svg>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ==========================================================================
+         SECTION 05 — FULL-WIDTH EDITORIAL BANNER
+         ========================================================================== -->
+    <section class="video-banner-section" aria-label="Atmospheric Skincare Ritual Showcase">
+      <!-- High-resolution editorial photography of mindful skincare ritual -->
+      <img 
+        src="assets/images/banner-skincare.jpg" 
+        alt="Woman performing gentle mindful facial skincare ritual with natural radiant skin" 
+        class="video-banner-media video-banner-img"
+        loading="lazy"
+        referrerpolicy="no-referrer"
+      >
+
+      <!-- Autoplaying background video layer (if assets/beauty-background.mp4 is available) -->
+      <video 
+        class="video-banner-media video-banner-video" 
+        src="assets/beauty-background.mp4" 
+        poster="assets/images/banner-skincare.jpg"
+        autoplay 
+        muted 
+        loop 
+        playsinline
+        aria-hidden="true"
+      ></video>
+
+      <!-- Warm mocha/taupe transparent gradient overlay preserving legibility -->
+      <div class="video-banner-overlay" aria-hidden="true"></div>
+
+      <!-- Editorial Typography & CTA Content -->
+      <div class="video-banner-content fade-up">
+        <span class="video-banner-kicker">Mindful Aesthetic Care</span>
+        <h2 class="video-banner-title">Discover what fits you best — <em>feel the difference</em> with every touch.</h2>
+        <button class="btn btn-outline-white video-banner-btn" data-open-booking aria-label="Explore our aesthetic treatments">
+          <span>Explore our treatments</span>
+          <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+            <line x1="5" y1="12" x2="19" y2="12"></line>
+            <polyline points="12 5 19 12 12 19"></polyline>
+          </svg>
+        </button>
+      </div>
+    </section>
+
+    <!-- ==========================================================================
+         SECTION 06 — PRODUCTS AND TECHNOLOGIES
+         ========================================================================== -->
+    <section class="brands-section section-padding">
+      <div class="container fade-up">
+        <h2 class="brands-title">We use products from <em>the most renowned cosmetic brands</em>, ensuring they meet all industry standards</h2>
+        <p class="brands-description">
+          Carefully selected biocompatible formulations, clean clinical botanicals, and hypoallergenic active serums meeting the highest international cosmetic quality standards.
+        </p>
+
+        <div class="brands-grid">
+          <div class="brand-badge">
+            <span class="brand-badge-name">BOTANICA</span>
+            <span class="brand-badge-tag">Clinical</span>
+          </div>
+          <div class="brand-badge">
+            <span class="brand-badge-name">PHYTO·C</span>
+            <span class="brand-badge-tag">Skin Care</span>
+          </div>
+          <div class="brand-badge">
+            <span class="brand-badge-name">CELLULAR</span>
+            <span class="brand-badge-tag">Derm Lab</span>
+          </div>
+          <div class="brand-badge">
+            <span class="brand-badge-name">DSD</span>
+            <span class="brand-badge-tag">de Luxe</span>
+          </div>
+          <div class="brand-badge">
+            <span class="brand-badge-name">GIGI</span>
+            <span class="brand-badge-tag">Laboratories</span>
+          </div>
+          <div class="brand-badge">
+            <span class="brand-badge-name">LUMEN</span>
+            <span class="brand-badge-tag">Organic</span>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ==========================================================================
+         SECTION 07 — REDEFINING BEAUTY (EDITORIAL ASYMMETRICAL MOSAIC)
+         ========================================================================== -->
+    <section class="works-section editorial-mosaic-section" id="works">
+      <div class="container mosaic-container">
+        <!-- Asymmetrical Editorial Mosaic Grid with central-top title placement -->
+        <div class="mosaic-grid">
+          <!-- Editorial Header (Positioned in central-top of grid on desktop, top on mobile) -->
+          <div class="mosaic-header fade-up">
+            <span class="about-badge">Visual Journal</span>
+            <h2 class="mosaic-title">Redefining <em>Beauty</em></h2>
+            <p class="mosaic-subtitle">A thoughtful approach to beauty, self-care and well-being.</p>
+          </div>
+          <!-- 1. Left Vertical Photo -->
+          <div class="work-item mosaic-item mosaic-item-1 fade-up" data-caption="Natural facial radiance and luminous skin barrier">
+            <img 
+              src="assets/images/hero_model_glow_1793460125013.jpg" 
+              alt="Natural facial radiance with bare glowing skin"
+              loading="lazy"
+              referrerpolicy="no-referrer"
+            >
+            <div class="work-item-overlay">
+              <span>View Moment</span>
+            </div>
+          </div>
+
+          <!-- 2. Central-Left Smaller Photo -->
+          <div class="work-item mosaic-item mosaic-item-2 fade-up" data-caption="Botanical active serums with antioxidant botanical extracts">
+            <img 
+              src="assets/images/serum_dropper_texture_1793460169736.jpg" 
+              alt="Golden botanical serum droplet texture"
+              loading="lazy"
+              referrerpolicy="no-referrer"
+            >
+            <div class="work-item-overlay">
+              <span>View Moment</span>
+            </div>
+          </div>
+
+          <!-- 3. Central-Lower Photo -->
+          <div class="work-item mosaic-item mosaic-item-3 fade-up" data-caption="Myofascial sculpting massage and lymphatic relaxation">
+            <img 
+              src="assets/images/skincare_massage_facial_1793460155126.jpg" 
+              alt="Calming myofascial facial sculpting treatment in progress"
+              loading="lazy"
+              referrerpolicy="no-referrer"
+            >
+            <div class="work-item-overlay">
+              <span>View Moment</span>
+            </div>
+          </div>
+
+          <!-- 4. Upper-Right Smaller Photo -->
+          <div class="work-item mosaic-item mosaic-item-4 fade-up" data-caption="Calming botanical clay and enzyme infusion mask">
+            <img 
+              src="assets/images/skincare_clay_mask_1793460171297.jpg" 
+              alt="Botanical clay smoothing mask texture"
+              loading="lazy"
+              referrerpolicy="no-referrer"
+            >
+            <div class="work-item-overlay">
+              <span>View Moment</span>
+            </div>
+          </div>
+
+          <!-- 5. Right Vertical Photo -->
+          <div class="work-item mosaic-item mosaic-item-5 fade-up" data-caption="Cryo toning and contour micro-stimulation">
+            <img 
+              src="assets/images/services_facial_roller_1793460139295.jpg" 
+              alt="Cryo roller cooling treatment on cheek contour"
+              loading="lazy"
+              referrerpolicy="no-referrer"
+            >
+            <div class="work-item-overlay">
+              <span>View Moment</span>
+            </div>
+          </div>
+
+          <!-- 6. Lower Horizontal Photo -->
+          <div class="work-item mosaic-item mosaic-item-6 fade-up" data-caption="Serene private aesthetic suites at LUMI Paris">
+            <img 
+              src="assets/images/about_treatment_room_1793460138413.jpg" 
+              alt="Serene minimalist treatment room interior"
+              loading="lazy"
+              referrerpolicy="no-referrer"
+            >
+            <div class="work-item-overlay">
+              <span>View Moment</span>
+            </div>
+          </div>
+        </div>
+
+        <!-- Subtle CTA action -->
+        <div class="mosaic-footer-action fade-up">
+          <button class="btn btn-outline" data-open-booking>
+            <span>Schedule a visit</span>
+            <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+              <line x1="5" y1="12" x2="19" y2="12"></line>
+              <polyline points="12 5 19 12 12 19"></polyline>
+            </svg>
+          </button>
+        </div>
+      </div>
+    </section>
+
+    <!-- Lightbox Modal -->
+    <div class="lightbox-modal" aria-hidden="true" role="dialog" aria-label="Artwork preview modal">
+      <button class="lightbox-close" aria-label="Close lightbox">
+        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+          <line x1="18" y1="6" x2="6" y2="18"></line>
+          <line x1="6" y1="6" x2="18" y2="18"></line>
+        </svg>
+      </button>
+      <button class="lightbox-nav lightbox-prev" aria-label="Previous image">
+        <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+          <polyline points="15 18 9 12 15 6"></polyline>
+        </svg>
+      </button>
+      <div class="lightbox-content">
+        <img src="" alt="" class="lightbox-img">
+        <div class="lightbox-caption"></div>
+      </div>
+      <button class="lightbox-nav lightbox-next" aria-label="Next image">
+        <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+          <polyline points="9 18 15 12 9 6"></polyline>
+        </svg>
+      </button>
+    </div>
+
+    <!-- ==========================================================================
+         SECTION 08 — CLIENT REVIEWS
+         ========================================================================== -->
+    <section class="reviews-section section-padding" id="reviews">
+      <div class="container">
+        <div class="section-header text-center fade-up">
+          <span class="about-badge">Client Words</span>
+          <h2 class="section-title">Client <em>reviews</em></h2>
+          <p class="section-subtitle" style="margin: 0.5rem auto 0;">Authentic impressions shared by visitors to our calm Parisian aesthetic space.</p>
+        </div>
+
+        <div class="reviews-grid">
+          <!-- Review 1 -->
+          <div class="review-card fade-up">
+            <div>
+              <div class="review-quote-mark">“</div>
+              <p class="review-quote-text">The studio feels like a breath of calm. Every visit is a small act of self-love.</p>
+            </div>
+            <div class="review-author">
+              <div class="review-avatar">ER</div>
+              <div>
+                <h4 class="review-name">Emily R.</h4>
+                <span class="review-tag">Client Experience</span>
+              </div>
+            </div>
+          </div>
+
+          <!-- Review 2 -->
+          <div class="review-card fade-up">
+            <div>
+              <div class="review-quote-mark">“</div>
+              <p class="review-quote-text">LUMI is more than beauty — it’s therapy for the soul. My skin has never looked healthier.</p>
+            </div>
+            <div class="review-author">
+              <div class="review-avatar">CT</div>
+              <div>
+                <h4 class="review-name">Claire T.</h4>
+                <span class="review-tag">Facial Rituals</span>
+              </div>
+            </div>
+          </div>
+
+          <!-- Review 4 -->
+          <div class="review-card fade-up">
+            <div>
+              <div class="review-quote-mark">“</div>
+              <p class="review-quote-text">Everything feels calm and intentional here. The botanical treatments are gentle yet remarkably transformative.</p>
+            </div>
+            <div class="review-author">
+              <div class="review-avatar">OM</div>
+              <div>
+                <h4 class="review-name">Olivia M.</h4>
+                <span class="review-tag">Cosmetology Care</span>
+              </div>
+            </div>
+          </div>
+
+          <!-- Review 5 -->
+          <div class="review-card fade-up">
+            <div>
+              <div class="review-quote-mark">“</div>
+              <p class="review-quote-text">Pure magic. You walk out glowing — inside and out. Emma’s hands and technique are simply exceptional.</p>
+            </div>
+            <div class="review-author">
+              <div class="review-avatar">SM</div>
+              <div>
+                <h4 class="review-name">Sophia M.</h4>
+                <span class="review-tag">Sculptural Massage</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ==========================================================================
+         SECTION 09 — AFTERCARE RITUALS
+         ========================================================================== -->
+    <section class="aftercare-section section-padding" id="care">
+      <div class="container">
+        <div class="aftercare-headline-wrap fade-up">
+          <span class="about-badge">Mindful At-Home Care</span>
+          <h2 class="section-title">
+            Aftercare <em>rituals</em>
+          </h2>
+          <p class="aftercare-subheading">
+            <span class="aftercare-text-lead">to keep your skin</span>
+            <span class="aftercare-inline-lock">
+              <span class="aftercare-sticker">
+                <img src="assets/images/service-cleanser.jpg" alt="Glowing skin sticker">
+              </span>
+              <span class="italic-accent">glowing</span>
+            </span>
+            <span class="aftercare-text-trail">— follow our simple self-care routine</span>
+          </p>
+          <p class="section-subtitle" style="margin: 0.75rem auto 0;">
+            Each step is designed to prolong your clinical results and make your beauty routine more mindful.
+          </p>
+        </div>
+
+        <div class="aftercare-grid">
+          <!-- Card 1 -->
+          <div class="aftercare-card card-hoverable fade-up">
+            <div class="aftercare-img-wrap">
+              <img 
+                src="assets/images/service-cleanser.jpg" 
+                alt="Gentle cleansing and washing step" 
+                class="aftercare-img"
+                loading="lazy"
+                referrerpolicy="no-referrer"
+              >
+            </div>
+            <div class="aftercare-body">
+              <div>
+                <h3 class="aftercare-card-title">Cleansing and washing</h3>
+                <p class="aftercare-card-desc">Use a lukewarm, pH-balanced amino acid cleanser morning and evening to respect your skin’s delicate lipid barrier.</p>
+              </div>
+              <div style="display: flex; justify-content: flex-end;">
+                <div class="btn-circle-arrow" aria-label="Read Cleansing Ritual">
+                  <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                    <line x1="5" y1="12" x2="19" y2="12"></line>
+                    <polyline points="12 5 19 12 12 19"></polyline>
+                  </svg>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Card 2 -->
+          <div class="aftercare-card card-hoverable fade-up">
+            <div class="aftercare-img-wrap">
+              <img 
+                src="assets/images/service-serum.jpg" 
+                alt="Hydrating serum care routine" 
+                class="aftercare-img"
+                loading="lazy"
+                referrerpolicy="no-referrer"
+              >
+            </div>
+            <div class="aftercare-body">
+              <div>
+                <h3 class="aftercare-card-title">Serum care routine</h3>
+                <p class="aftercare-card-desc">Press 3-4 drops of antioxidant and hyaluronic serum onto damp skin immediately after cleansing for deep hydration.</p>
+              </div>
+              <div style="display: flex; justify-content: flex-end;">
+                <div class="btn-circle-arrow" aria-label="Read Serum Ritual">
+                  <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                    <line x1="5" y1="12" x2="19" y2="12"></line>
+                    <polyline points="12 5 19 12 12 19"></polyline>
+                  </svg>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Card 3 -->
+          <div class="aftercare-card card-hoverable fade-up">
+            <div class="aftercare-img-wrap">
+              <img 
+                src="assets/images/treatment-room.jpg" 
+                alt="Moisturizing and sun protection routine" 
+                class="aftercare-img"
+                loading="lazy"
+                referrerpolicy="no-referrer"
+              >
+            </div>
+            <div class="aftercare-body">
+              <div>
+                <h3 class="aftercare-card-title">Moisturize &amp; Protect</h3>
+                <p class="aftercare-card-desc">Seal hydration with a ceramide cream, followed by broad-spectrum mineral SPF daily to defend cellular longevity.</p>
+              </div>
+              <div style="display: flex; justify-content: flex-end;">
+                <div class="btn-circle-arrow" aria-label="Read Protection Ritual">
+                  <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                    <line x1="5" y1="12" x2="19" y2="12"></line>
+                    <polyline points="12 5 19 12 12 19"></polyline>
+                  </svg>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Card 4 -->
+          <div class="aftercare-card card-hoverable fade-up">
+            <div class="aftercare-img-wrap">
+              <img 
+                src="assets/images/service-mask.jpg" 
+                alt="Gentle weekly exfoliation" 
+                class="aftercare-img"
+                loading="lazy"
+                referrerpolicy="no-referrer"
+              >
+            </div>
+            <div class="aftercare-body">
+              <div>
+                <h3 class="aftercare-card-title">Gentle Exfoliation</h3>
+                <p class="aftercare-card-desc">Incorporate mild fruit enzymes or lactic acid once weekly to encourage smooth renewal without micro-abrasions.</p>
+              </div>
+              <div style="display: flex; justify-content: flex-end;">
+                <div class="btn-circle-arrow" aria-label="Read Exfoliation Ritual">
+                  <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                    <line x1="5" y1="12" x2="19" y2="12"></line>
+                    <polyline points="12 5 19 12 12 19"></polyline>
+                  </svg>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- ==========================================================================
+       SECTION 10 — READY TO GLOW (CONTACT & FOOTER)
+       ========================================================================== -->
+  <!-- ==========================================================================
+       SECTION 10 — REFINED 3-TIER FOOTER (READY TO GLOW / INSTITUTIONAL / BOTTOM BAR)
+       ========================================================================== -->
+  <footer class="footer-section" id="contact">
+    <!-- ======================================================================
+         ÁREA 01 — READY TO GLOW / CTA (Soft rosy-beige #F3E9E6)
+         ====================================================================== -->
+    <div class="footer-cta-area">
+      <div class="container">
+        <div class="footer-cta-card fade-up">
+          <div class="footer-cta-content">
+            <span class="footer-cta-kicker">Sanctuary of Wellbeing</span>
+            <h2 class="footer-cta-title">Ready to <em>Glow?</em></h2>
+            <p class="footer-cta-subtitle">
+              Your journey to beauty, balance and well-being starts with a moment dedicated to you.
+            </p>
+
+            <!-- Interactive Booking & Inquiry Form -->
+            <form class="booking-form footer-booking-form needs-validation" novalidate>
+              <div class="form-row">
+                <div class="form-group">
+                  <label class="form-label" for="footer-name">Your Name <span class="form-required" aria-hidden="true">*</span></label>
+                  <div class="input-wrapper">
+                    <input type="text" id="footer-name" name="name" class="form-input" placeholder="e.g. Clara Laurent" autocomplete="name" required>
+                  </div>
+                </div>
+                <div class="form-group">
+                  <label class="form-label" for="footer-contact">Phone or Email <span class="form-required" aria-hidden="true">*</span></label>
+                  <div class="input-wrapper">
+                    <input type="text" id="footer-contact" name="contact" class="form-input" placeholder="+33 6 12 34 56 78" autocomplete="tel" required>
+                  </div>
+                </div>
+              </div>
+
+              <div class="form-group">
+                <label class="form-label" for="footer-service">Treatment Interest</label>
+                <div class="select-wrapper">
+                  <select id="footer-service" name="service" class="form-select">
+                    <option value="Initial Consultation & Skin Analysis">Initial Consultation &amp; Skin Analysis</option>
+                    <option value="Hardware Cosmetology">Hardware Cosmetology (Sculpt &amp; Lift)</option>
+                    <option value="Skincare Procedures">Skincare Procedures (Enzyme &amp; Peels)</option>
+                    <option value="Lip & Contour Care">Lip &amp; Contour Bio-Care</option>
+                    <option value="Massage Therapy">Sculptural Buccal &amp; Myofascial Lift</option>
+                  </select>
+                </div>
+              </div>
+
+              <div class="form-group">
+                <label class="form-label" for="footer-message">Message or Preferred Date <span class="form-optional">(Optional)</span></label>
+                <div class="textarea-wrapper">
+                  <textarea id="footer-message" name="message" class="form-textarea" rows="3" placeholder="Tell us about your skin goals or preferred weekday..."></textarea>
+                </div>
+              </div>
+
+              <div class="footer-cta-action-row">
+                <button type="submit" class="btn btn-primary footer-cta-submit-btn form-submit-btn">
+                  <span class="btn-text">Schedule your visit</span>
+                  <svg class="btn-arrow-icon" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                    <line x1="5" y1="12" x2="19" y2="12"></line>
+                    <polyline points="12 5 19 12 12 19"></polyline>
+                  </svg>
+                </button>
+                <button type="button" class="btn btn-outline footer-quick-modal-btn" data-open-booking>
+                  <span>Quick Booking</span>
+                </button>
+              </div>
+
+              <div class="form-feedback" role="alert" aria-live="polite"></div>
+            </form>
+          </div>
+
+          <!-- Lateral Editorial Photography of Skincare & Self-Care -->
+          <div class="footer-cta-media-wrap">
+            <div class="footer-cta-img-frame">
+              <img 
+                src="assets/images/service-serum.jpg" 
+                alt="Mindful skincare ritual with golden botanical serum drops" 
+                class="footer-cta-img"
+                loading="lazy"
+                referrerpolicy="no-referrer"
+              >
+              <div class="footer-cta-badge">
+                <span class="footer-cta-badge-tag">Private Sessions</span>
+                <span class="footer-cta-badge-title">Bespoke Aesthetics</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- ======================================================================
+         ÁREA 02 — INSTITUTIONAL FOOTER (Off-white #F7F3EE)
+         ====================================================================== -->
+    <div class="footer-institutional-area">
+      <div class="container">
+        <div class="footer-institutional-grid fade-up">
+          <!-- Coluna 1: Brand & Positioning -->
+          <div class="footer-col footer-col-brand">
+            <a href="#top" class="brand-logo footer-brand-logo" aria-label="LUMI Studio Home">LUMI</a>
+            <p class="footer-institutional-text">
+              A serene aesthetics sanctuary dedicated to gentle facial sculpting, cellular hydration, and biocompatible skincare protocols.
+            </p>
+            <p class="footer-brand-quote">
+              <em>“Beauty in simplicity — where subtle glow meets timeless care.”</em>
+            </p>
+          </div>
+
+          <!-- Coluna 2: Explore -->
+          <div class="footer-col">
+            <h3 class="footer-col-title">Explore</h3>
+            <ul class="footer-links-list">
+              <li><a href="#about" class="footer-nav-link">About us</a></li>
+              <li><a href="#services" class="footer-nav-link">Our services</a></li>
+              <li><a href="#works" class="footer-nav-link">Our works</a></li>
+              <li><a href="#care" class="footer-nav-link">Aftercare rituals</a></li>
+              <li><a href="#reviews" class="footer-nav-link">Client reviews</a></li>
+            </ul>
+          </div>
+
+          <!-- Coluna 3: Contact -->
+          <div class="footer-col">
+            <h3 class="footer-col-title">Contact</h3>
+            <div class="footer-contact-details">
+              <div class="footer-contact-item">
+                <span class="footer-contact-label">Studio Address</span>
+                <span class="footer-contact-val">Rue de Laborde, 21<br>75008 Paris, France</span>
+              </div>
+              <div class="footer-contact-item">
+                <span class="footer-contact-label">Direct Line</span>
+                <a href="tel:+33140205346" class="footer-contact-val footer-hover-link">+33 1 40 20 53 46</a>
+              </div>
+              <div class="footer-contact-item">
+                <span class="footer-contact-label">Inquiries</span>
+                <a href="mailto:bonjour@lumi-studio.com" class="footer-contact-val footer-hover-link">bonjour@lumi-studio.com</a>
+              </div>
+              <div class="footer-contact-item">
+                <span class="footer-contact-label">Opening Hours</span>
+                <span class="footer-contact-val">Mon – Sat: 09:00 – 20:00<br>Sun: Closed (Private by request)</span>
+              </div>
+              <div class="footer-wa-wrap">
+                <button class="btn btn-outline footer-wa-btn" data-whatsapp aria-label="Chat via WhatsApp with LUMI">
+                  <svg width="15" height="15" viewBox="0 0 24 24" fill="currentColor">
+                    <path d="M12.031 6.172c-3.181 0-5.767 2.586-5.768 5.766-.001 1.298.38 2.27 1.019 3.287l-.711 2.598 2.669-.699c.969.539 1.942.823 2.79.823h.002c3.18 0 5.767-2.587 5.768-5.766 0-3.182-2.587-5.769-5.769-5.769zm3.376 8.163c-.147.414-.738.777-1.026.828-.278.049-.636.075-1.036-.053-.243-.078-.557-.184-1.031-.389-1.996-.864-3.298-2.887-3.398-3.02-.1-.133-.809-1.077-.809-2.054 0-.977.512-1.458.694-1.658.182-.2.398-.25.53-.25.133 0 .265.002.381.008.123.007.288-.046.45.344.167.399.569 1.388.618 1.488.05.1.083.216.017.348-.066.133-.1.216-.199.332-.1.116-.21.259-.3.348-.1.099-.204.208-.088.407.116.199.516.852 1.108 1.379.761.679 1.403.889 1.602.988.199.1.316.083.432-.05.116-.133.498-.58.63-.779.133-.199.266-.166.448-.099.183.066 1.162.548 1.361.647.199.1.332.149.381.233.05.083.05.481-.097.895z"/>
+                  </svg>
+                  <span>WhatsApp Consultation</span>
+                </button>
+              </div>
+            </div>
+          </div>
+
+          <!-- Coluna 4: Follow us -->
+          <div class="footer-col">
+            <h3 class="footer-col-title">Follow us</h3>
+            <p class="footer-instagram-handle">
+              <a href="https://instagram.com" target="_blank" rel="noopener noreferrer" class="footer-hover-link">@lumi.studio</a>
+            </p>
+            <p class="footer-social-note">Join our community for mindful self-care rituals and seasonal skin insights.</p>
+            
+            <div class="footer-social-row">
+              <a href="https://instagram.com" target="_blank" rel="noopener noreferrer" class="social-circle-link" aria-label="Follow LUMI on Instagram">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round">
+                  <rect x="2" y="2" width="20" height="20" rx="5" ry="5"></rect>
+                  <path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"></path>
+                  <line x1="17.5" y1="6.5" x2="17.51" y2="6.5"></line>
+                </svg>
+              </a>
+              <a href="https://tiktok.com" target="_blank" rel="noopener noreferrer" class="social-circle-link" aria-label="Follow LUMI on TikTok">
+                <svg viewBox="0 0 24 24" fill="currentColor">
+                  <path d="M12.525.02c1.31-.02 2.61-.01 3.91-.02.08 1.53.63 3.09 1.75 4.17 1.12 1.11 2.7 1.62 4.24 1.79v4.03c-1.44-.05-2.89-.35-4.2-.97-.57-.26-1.1-.59-1.62-.93-.01 2.92.01 5.84-.02 8.75-.08 1.4-.54 2.79-1.35 3.94-1.31 1.92-3.58 3.17-5.91 3.21-1.43.08-2.86-.31-4.08-1.03-2.02-1.19-3.44-3.37-3.65-5.71-.02-.5-.03-1-.01-1.49.18-1.9 1.12-3.72 2.58-4.96 1.66-1.44 3.98-2.13 6.15-1.72.02 1.48-.04 2.96-.04 4.44-.99-.32-2.15-.23-3.02.37-.63.41-1.11 1.04-1.36 1.75-.21.51-.24 1.07-.14 1.61.24 1.64 1.82 3.02 3.5 2.87 1.12-.01 2.19-.66 2.77-1.61.19-.33.4-.67.41-1.06.1-1.79.06-3.57.07-5.36.01-4.03-.01-8.05.02-12.07z"/>
+                </svg>
+              </a>
+              <a href="https://telegram.org" target="_blank" rel="noopener noreferrer" class="social-circle-link" aria-label="Message LUMI on Telegram">
+                <svg viewBox="0 0 24 24" fill="currentColor">
+                  <path d="M11.944 0A12 12 0 0 0 0 12a12 12 0 0 0 12 12 12 12 0 0 0 12-12A12 12 0 0 0 12 0a12 12 0 0 0-.056 0zm4.962 7.224c.1-.002.321.023.465.14a.506.506 0 0 1 .171.325c.016.093.036.306.02.472-.18 1.898-.962 6.502-1.36 8.627-.168.9-.499 1.201-.82 1.23-.696.065-1.225-.46-1.9-.902-1.056-.693-1.653-1.124-2.678-1.8-1.185-.78-.417-1.21.258-1.91.177-.184 3.247-2.977 3.307-3.23.007-.032.014-.15-.056-.212s-.174-.041-.249-.024c-.106.024-1.793 1.14-5.061 3.345-.48.33-.913.49-1.302.48-.428-.008-1.252-.241-1.865-.44-.752-.245-1.349-.374-1.297-.789.027-.216.325-.437.893-.663 3.498-1.524 5.83-2.529 6.998-3.014 3.332-1.386 4.025-1.627 4.476-1.635z"/>
+                </svg>
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- ======================================================================
+         ÁREA 03 — BOTTOM BAR (Solid dark brown #49382F)
+         ====================================================================== -->
+    <div class="footer-bottom-bar">
+      <div class="container footer-bottom-container">
+        <div class="footer-copyright">
+          © 2026 LUMI Aesthetics Studio. All rights reserved.
+        </div>
+        <div class="footer-bottom-links">
+          <a href="#about" class="footer-bottom-link">About</a>
+          <a href="#services" class="footer-bottom-link">Services</a>
+          <a href="#works" class="footer-bottom-link">Works</a>
+          <a href="#care" class="footer-bottom-link">Aftercare</a>
+          <a href="#contact" class="footer-bottom-link">Contact</a>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <!-- ==========================================================================
+       APPOINTMENT BOOKING MODAL
+       ========================================================================== -->
+  <div class="booking-modal-overlay" aria-hidden="true" role="dialog" aria-labelledby="modal-booking-title">
+    <div class="booking-modal-card">
+      <button class="modal-close-btn" aria-label="Close booking modal">
+        <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+          <line x1="18" y1="6" x2="6" y2="18"></line>
+          <line x1="6" y1="6" x2="18" y2="18"></line>
+        </svg>
+      </button>
+
+      <div class="modal-header-meta">
+        <span class="about-badge">Personalized Aesthetics</span>
+        <h3 id="modal-booking-title" class="section-title modal-title">Schedule your <em>visit</em></h3>
+        <p class="modal-subtitle">
+          Select your desired aesthetic protocol and preferred time. Our team will contact you within 24 hours to confirm your private session.
+        </p>
+      </div>
+
+      <form class="booking-form booking-modal-form needs-validation" novalidate>
+        <div class="form-group">
+          <label class="form-label" for="modal-name">Full Name <span class="form-required" aria-hidden="true">*</span></label>
+          <div class="input-wrapper">
+            <input type="text" id="modal-name" name="name" class="form-input" placeholder="e.g. Clara Laurent" autocomplete="name" required>
+          </div>
+        </div>
+
+        <div class="form-row">
+          <div class="form-group">
+            <label class="form-label" for="modal-phone">Phone Number <span class="form-required" aria-hidden="true">*</span></label>
+            <div class="input-wrapper">
+              <input type="tel" id="modal-phone" name="contact" class="form-input" placeholder="+33 6 12 34 56 78" autocomplete="tel" required>
+            </div>
+          </div>
+          <div class="form-group">
+            <label class="form-label" for="modal-email">Email Address <span class="form-optional">(Optional)</span></label>
+            <div class="input-wrapper">
+              <input type="email" id="modal-email" name="email" class="form-input" placeholder="clara@example.com" autocomplete="email">
+            </div>
+          </div>
+        </div>
+
+        <div class="form-group">
+          <label class="form-label" for="modal-service">Selected Treatment</label>
+          <div class="select-wrapper">
+            <select id="modal-service" name="service" class="form-select">
+              <option value="Hardware Cosmetology">Hardware Cosmetology (Sculpt &amp; Lift)</option>
+              <option value="Skincare Procedures">Skincare Procedures (Enzyme &amp; Peels)</option>
+              <option value="Lip & Contour Care">Lip &amp; Contour Bio-Care</option>
+              <option value="Massage Therapy">Sculptural Buccal &amp; Myofascial Lift</option>
+              <option value="Initial Consultation & Skin Analysis">Initial Consultation &amp; Skin Analysis</option>
+            </select>
+          </div>
+        </div>
+
+        <div class="form-group">
+          <label class="form-label" for="modal-notes">Preferred Date or Skin Notes <span class="form-optional">(Optional)</span></label>
+          <div class="textarea-wrapper">
+            <textarea id="modal-notes" name="notes" class="form-textarea" rows="3" placeholder="Let us know your availability, aesthetic goals or any sensitivities..."></textarea>
+          </div>
+        </div>
+
+        <div class="modal-form-actions">
+          <button type="submit" class="btn btn-primary modal-submit-btn form-submit-btn">
+            <span class="btn-text">Confirm Booking Request</span>
+            <svg class="btn-arrow-icon" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+              <line x1="5" y1="12" x2="19" y2="12"></line>
+              <polyline points="12 5 19 12 12 19"></polyline>
+            </svg>
+          </button>
+        </div>
+
+        <div class="form-feedback" role="alert" aria-live="polite"></div>
+      </form>
+    </div>
+  </div>
+
+  <!-- Floating Actions (WhatsApp & Scroll to top) -->
+  <div class="floating-actions">
+    <button class="scroll-top-btn" aria-label="Scroll to top of page">
+      <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+        <polyline points="18 15 12 9 6 15"></polyline>
+      </svg>
+    </button>
+    <button class="floating-whatsapp-btn" data-whatsapp aria-label="Quick WhatsApp consultation">
+      <svg viewBox="0 0 24 24" fill="currentColor">
+        <path d="M12.031 6.172c-3.181 0-5.767 2.586-5.768 5.766-.001 1.298.38 2.27 1.019 3.287l-.711 2.598 2.669-.699c.969.539 1.942.823 2.79.823h.002c3.18 0 5.767-2.587 5.768-5.766 0-3.182-2.587-5.769-5.769-5.769zm3.376 8.163c-.147.414-.738.777-1.026.828-.278.049-.636.075-1.036-.053-.243-.078-.557-.184-1.031-.389-1.996-.864-3.298-2.887-3.398-3.02-.1-.133-.809-1.077-.809-2.054 0-.977.512-1.458.694-1.658.182-.2.398-.25.53-.25.133 0 .265.002.381.008.123.007.288-.046.45.344.167.399.569 1.388.618 1.488.05.1.083.216.017.348-.066.133-.1.216-.199.332-.1.116-.21.259-.3.348-.1.099-.204.208-.088.407.116.199.516.852 1.108 1.379.761.679 1.403.889 1.602.988.199.1.316.083.432-.05.116-.133.498-.58.63-.779.133-.199.266-.166.448-.099.183.066 1.162.548 1.361.647.199.1.332.149.381.233.05.083.05.481-.097.895z"/>
+      </svg>
+    </button>
+  </div>
+
+  <!-- Vanilla JavaScript -->
+  <script src="js/script.js"></script>
+</body>
+</html>
