@@ -9,16 +9,16 @@
 // ==========================================================================
 const LUMI_CONFIG = {
   brandName: 'LUMI',
-  tagline: 'Beauty in simplicity',
-  phone: '+33 1 40 20 53 46',
-  phoneRaw: '33140205346',
-  whatsappNumber: '33140205346',
-  whatsappDefaultMsg: 'Hello LUMI Studio, I would like to inquire about booking a personalized aesthetics consultation.',
+  tagline: 'Beleza na simplicidade',
+  phone: '+55 15 99171-3819',
+  phoneRaw: '5515991713819',
+  whatsappNumber: '5515991713819',
+  whatsappDefaultMsg: 'Olá, equipe da LUMI. Gostaria de solicitar informações sobre o agendamento de uma consulta personalizada.',
   email: 'bonjour@lumi-studio.com',
-  instagram: 'https://instagram.com/lumi.studio',
+  instagram: 'https://instagram.com/',
   instagramHandle: '@lumi.studio',
-  address: 'Rue de Laborde, 21, 75008 Paris, France',
-  openingHours: 'Mon – Sat: 09:00 – 20:00 | Sun: Closed'
+  address: 'Rua Exemplo, 21, 75008 Sorocaba, São Paulo, Brasil',
+  openingHours: 'Segunda a Sábado: 09h às 20h | Domingo: Fechado'
 };
 
 document.addEventListener('DOMContentLoaded', () => {
@@ -31,6 +31,7 @@ document.addEventListener('DOMContentLoaded', () => {
   initScrollTop();
   initScrollAnimations();
   initWhatsAppCTAs();
+  initFaqAccordion();
 });
 
 // ==========================================================================
@@ -70,7 +71,7 @@ function initMobileNav() {
     drawer.setAttribute('aria-hidden', 'false');
     toggleBtn.classList.add('is-open');
     toggleBtn.setAttribute('aria-expanded', 'true');
-    if (hamburgerLabel) hamburgerLabel.textContent = 'Close';
+    if (hamburgerLabel) hamburgerLabel.textContent = 'Fechar';
     document.body.style.overflow = 'hidden';
 
     // Focus first link for accessibility
@@ -183,8 +184,8 @@ function initGalleryLightbox() {
     const img = item.querySelector('img');
     return {
       src: img ? img.getAttribute('src') : '',
-      alt: img ? img.getAttribute('alt') : 'LUMI aesthetics treatment',
-      title: item.dataset.caption || (img ? img.getAttribute('alt') : 'Clinical artistry')
+      alt: img ? img.getAttribute('alt') : 'Procedimento estético LUMI',
+      title: item.dataset.caption || (img ? img.getAttribute('alt') : 'Espaço e cuidado estético')
     };
   });
 
@@ -220,7 +221,7 @@ function initGalleryLightbox() {
     item.addEventListener('click', () => openLightbox(index));
     item.setAttribute('tabindex', '0');
     item.setAttribute('role', 'button');
-    item.setAttribute('aria-label', `View ${item.dataset.caption || 'gallery photo'} in lightbox`);
+    item.setAttribute('aria-label', `Visualizar ${item.dataset.caption || 'fotografia da galeria'} em destaque`);
     item.addEventListener('keydown', (e) => {
       if (e.key === 'Enter' || e.key === ' ') {
         e.preventDefault();
@@ -345,7 +346,7 @@ function initContactForms() {
 
       const nameVal = nameInput.value.trim();
       const contactVal = contactInput.value.trim();
-      const selectedService = serviceSelect ? serviceSelect.value : 'Consultation';
+      const selectedService = serviceSelect ? serviceSelect.value : 'Consulta Personalizada';
 
       let hasError = false;
 
@@ -377,8 +378,8 @@ function initContactForms() {
                 <line x1="12" y1="16" x2="12.01" y2="16"></line>
               </svg>
               <div>
-                <strong>Please complete the highlighted fields.</strong><br>
-                <span>We need your name and contact details to reserve your private appointment.</span>
+                <strong>Por favor, preencha os campos destacados.</strong><br>
+                <span>Precisamos do seu nome e dados de contato para organizar seu atendimento exclusivo.</span>
               </div>
             </div>
           `;
@@ -393,7 +394,7 @@ function initContactForms() {
       if (submitBtn) {
         submitBtn.classList.add('is-submitting');
         submitBtn.innerHTML = `
-          <span class="btn-text">Recording Request...</span>
+          <span class="btn-text">Enviando solicitação...</span>
         `;
       }
 
@@ -414,9 +415,9 @@ function initContactForms() {
                 <polyline points="22 4 12 14.01 9 11.01"></polyline>
               </svg>
               <div>
-                <strong>Appointment request confirmed with care, ${escapeHtml(nameVal)}.</strong><br>
-                <span>Selected treatment: <em>${escapeHtml(selectedService)}</em>. Our clinical team will reach out to <strong>${escapeHtml(contactVal)}</strong> within 24 hours to coordinate your visit.</span><br>
-                <span style="display: inline-block; margin-top: 0.4rem; font-size: 0.76rem; opacity: 0.85;">(Production Notice: Form ready for Netlify Forms, Formspree, or your clinic booking webhook.)</span>
+                <strong>Solicitação de agendamento registrada com sucesso, ${escapeHtml(nameVal)}.</strong><br>
+                <span>Procedimento de interesse: <em>${escapeHtml(selectedService)}</em>. Nossa equipe entrará em contato pelo <strong>${escapeHtml(contactVal)}</strong> em até 24 horas úteis para alinhar o melhor horário.</span><br>
+                <span style="display: inline-block; margin-top: 0.4rem; font-size: 0.76rem; opacity: 0.85;">(Aviso: Formulário preparado para integração com Netlify Forms, Formspree ou webhook da clínica.)</span>
               </div>
             </div>
           `;
@@ -502,3 +503,44 @@ function initScrollAnimations() {
     observer.observe(el);
   });
 }
+
+// ==========================================================================
+// 11. FAQ ACCORDION (MINIMALIST & ACCESSIBLE)
+// ==========================================================================
+function initFaqAccordion() {
+  const faqItems = document.querySelectorAll('.faq-item');
+  if (!faqItems.length) return;
+
+  faqItems.forEach((item) => {
+    const trigger = item.querySelector('.faq-trigger');
+    const content = item.querySelector('.faq-content');
+    if (!trigger || !content) return;
+
+    trigger.addEventListener('click', () => {
+      const isAlreadyOpen = item.classList.contains('is-open');
+
+      // Close all other items for a clean editorial accordion experience
+      faqItems.forEach((otherItem) => {
+        if (otherItem !== item) {
+          otherItem.classList.remove('is-open');
+          const otherTrigger = otherItem.querySelector('.faq-trigger');
+          const otherContent = otherItem.querySelector('.faq-content');
+          if (otherTrigger) otherTrigger.setAttribute('aria-expanded', 'false');
+          if (otherContent) otherContent.style.maxHeight = null;
+        }
+      });
+
+      // Toggle current item
+      if (isAlreadyOpen) {
+        item.classList.remove('is-open');
+        trigger.setAttribute('aria-expanded', 'false');
+        content.style.maxHeight = null;
+      } else {
+        item.classList.add('is-open');
+        trigger.setAttribute('aria-expanded', 'true');
+        content.style.maxHeight = content.scrollHeight + 'px';
+      }
+    });
+  });
+}
+
